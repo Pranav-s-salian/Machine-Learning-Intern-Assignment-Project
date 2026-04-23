@@ -1,0 +1,46 @@
+{
+  "product": "AutoStream",
+  "tagline": "Automated video editing tools for content creators",
+  "plans": {
+    "basic": {
+      "name": "Basic Plan",
+      "price": "$29/month",
+      "features": [
+        "10 videos per month",
+        "720p resolution",
+        "Basic auto-editing tools",
+        "Email support (business hours)"
+      ]
+    },
+    "pro": {
+      "name": "Pro Plan",
+      "price": "$79/month",
+      "features": [
+        "Unlimited videos",
+        "4K resolution",
+        "AI captions",
+        "Advanced auto-editing tools",
+        "24/7 priority support"
+      ]
+    }
+  },
+  "policies": {
+    "refund_policy": "No refunds after 7 days of purchase.",
+    "support_policy": "24/7 support is available only on the Pro plan. Basic plan users receive email support during business hours.",
+    "trial_policy": "No free trial currently available. Plans can be cancelled anytime before the next billing cycle."
+  },
+  "faq": [
+    {
+      "question": "What platforms does AutoStream support?",
+      "answer": "AutoStream supports exports for YouTube, Instagram, TikTok, and all major social media platforms."
+    },
+    {
+      "question": "Can I upgrade from Basic to Pro?",
+      "answer": "Yes, you can upgrade at any time. The price difference will be prorated for the current billing cycle."
+    },
+    {
+      "question": "Does AutoStream have an API?",
+      "answer": "Yes, API access is available on the Pro plan for developers who want to integrate AutoStream into their workflow."
+    }
+  ]
+}
