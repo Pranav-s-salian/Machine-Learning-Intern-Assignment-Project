@@ -2,6 +2,7 @@ import os
 import json
 from typing import TypedDict, Annotated, List, Optional
 from dotenv import load_dotenv
+from pydantic import BaseModel, Field
 
 from google import genai
 from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
@@ -9,6 +10,32 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langgraph.graph import StateGraph, END
 
 load_dotenv()
+
+
+# ─────────────────────────────────────────────
+# 0. PYDANTIC RESPONSE MODELS
+# ─────────────────────────────────────────────
+
+class AgentResponse(BaseModel):
+    """Structured response from the AI agent."""
+    message: str = Field(description="The agent's response message")
+    intent: str = Field(description="Detected user intent")
+    requires_action: bool = Field(default=False, description="Whether action is needed")
+    action_type: Optional[str] = Field(default=None, description="Type of action if needed")
+
+
+class LeadCollectionResponse(BaseModel):
+    """Response during lead collection phase."""
+    message: str = Field(description="Message to send to user")
+    field_requesting: str = Field(description="Which field is being requested")
+    next_step: str = Field(description="What happens next")
+
+
+class LeadData(BaseModel):
+    """Structured lead information."""
+    name: str = Field(description="Lead name")
+    email: str = Field(description="Lead email address")
+    platform: str = Field(description="Creator platform (YouTube, Instagram, TikTok, etc.)")
 
 # ─────────────────────────────────────────────
 # 1. LOAD KNOWLEDGE BASE (RAG)
