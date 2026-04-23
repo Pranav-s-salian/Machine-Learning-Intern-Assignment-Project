@@ -125,10 +125,11 @@ autostream-agent/
 
 
 
+
+
 ## 🎥 Demo Video
 
-https://github.com/Pranav-s-salian/Machine-Learning-Intern-Assignment-Project/assets/demo.mp4
-
+[![Watch Demo](https://img.youtube.com/vi/n3qOZ01d_yU/0.jpg)](https://www.youtube.com/watch?v=n3qOZ01d_yU)
 ---
 
 ## ✅ Evaluation Checklist
