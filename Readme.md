@@ -123,9 +123,11 @@ autostream-agent/
 | `product_inquiry` | "What's the pricing?", "Do you have 4K support?" |
 | `high_intent` | "I want to sign up", "Let's get started with Pro" |
 
+
+
 ## 🎥 Demo Video
 
-[Watch the demo](https://youtu.be/n3qOZ01d_yU)
+https://github.com/Pranav-s-salian/Machine-Learning-Intern-Assignment-Project/assets/demo.mp4
 
 ---
 
