@@ -123,6 +123,10 @@ autostream-agent/
 | `product_inquiry` | "What's the pricing?", "Do you have 4K support?" |
 | `high_intent` | "I want to sign up", "Let's get started with Pro" |
 
+## 🎥 Demo Video
+
+[Watch the demo](https://youtu.be/n3qOZ01d_yU)
+
 ---
 
 ## ✅ Evaluation Checklist
